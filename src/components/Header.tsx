@@ -9,6 +9,7 @@ const NavBar = styled.header`
   align-items: center;
   height: 30px;
   padding: 25px 10px;
+  z-index: 100;
 `;
 
 const Contact = styled.div`
