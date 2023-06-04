@@ -9,6 +9,7 @@ const Container = styled.div`
   align-items: center;
   display: flex;
   height: calc(100vh - 80px);
+  overflow: hidden;
 `;
 
 const Social = styled.div`

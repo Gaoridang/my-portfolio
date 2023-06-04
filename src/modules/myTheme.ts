@@ -3,6 +3,7 @@ import { DefaultTheme } from 'styled-components';
 export const myTheme: DefaultTheme = {
   color: {
     background: '#fff',
+    font: '#000000',
   },
 
   fontSize: {
