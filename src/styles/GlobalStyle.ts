@@ -6,6 +6,9 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Poppins', sans-serif;
+    ::-webkit-scrollbar {
+      display: none;  
+    }
   }
 
   a {

@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { RxGithubLogo } from 'react-icons/rx';
+import mainImage from '../assets/images/photo_01.jpg';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 // styling each components
 const Container = styled.div`
@@ -32,6 +35,8 @@ const Introduce = styled.div`
   align-items: center;
 `;
 
+const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
+
 const Main = () => {
   return (
     <>
@@ -44,7 +49,19 @@ const Main = () => {
             <RxGithubLogo size={26} />
           </a>
         </Social>
-        <Introduce>Text here</Introduce>
+        <Introduce>
+          <div style={{ width: '300px', height: '400px', overflow: 'hidden' }}>
+            <Link to={'/detail'}>
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                transition={transition}
+                width={300}
+                src={mainImage}
+                alt="main"
+              />
+            </Link>
+          </div>
+        </Introduce>
       </Container>
     </>
   );

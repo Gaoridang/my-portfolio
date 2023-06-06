@@ -7,6 +7,7 @@ const Card = styled.div`
   align-items: center;
   min-width: 200px;
   max-width: 200px;
+  margin: 5px 0;
   padding: 20px;
   height: 300px;
   border: 1.5px solid #000000;
@@ -35,10 +36,6 @@ export interface Project {
   title: string;
   skill: string;
   id: string;
-}
-
-interface Props {
-  projects: Project[];
 }
 
 const ProjectList = () => {
